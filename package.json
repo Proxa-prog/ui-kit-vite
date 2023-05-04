@@ -1,14 +1,14 @@
 {
   "name": "ui-kit-vite",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "./dist/ui-kit-vite.umd.cjs",
   "module": "./dist/ui-kit-vite.js",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/ui-kit-vite.js",
+      "require": "./dist/ui-kit-vite.umd.cjs"
     }
   },
   "scripts": {
@@ -17,8 +17,7 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "e2e": "wdio run ./wdio.conf.ts",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "e2e": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
     "@wdio/appium-service": "^8.10.0",

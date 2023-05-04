@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "./index";
+import {Accordion, Button} from "./index";
 
 function App() {
     const [text, setText] = useState('кнопка');
