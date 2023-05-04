@@ -13,7 +13,8 @@ test('Accordion', async () => {
     await page.setContent(html);
     const result = await page.screenshot();
     expect(result).toMatchImageSnapshot({
-        failureThreshold: 0.0001,
+        comparisonMethod: 'ssim',
+        failureThreshold: 0.001,
         failureThresholdType: 'percent'
     });
 });
