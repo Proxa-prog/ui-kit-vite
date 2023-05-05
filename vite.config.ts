@@ -1,10 +1,11 @@
-/// <reference types="vitest" />
+/// <reference types="./declaration.d.ts" />
 /// <reference types="vite/client" />
 
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   publicDir: 'src/assets',
@@ -15,9 +16,13 @@ export default defineConfig({
       fileName: 'ui-kit-vite',
     },
   },
+  server: {
+    open: true,
+  },
   plugins: [
+    react(),
     dts(),
-    react()
+    svgr(),
   ],
   test: {
     globals: true,
@@ -25,6 +30,13 @@ export default defineConfig({
     setupFiles: './src/tests/setup.ts',
     deps: {
       inline: [/vite-test-utils/]
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "src/global.scss" as *;`,
+      }
     }
   },
 });

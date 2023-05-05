@@ -1,3 +1,119 @@
-.button {
-  font-size: 13px;
+.primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: $color-main-090;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: $neutral-color;
+
+  &:hover {
+    background: $color-main-100;
+  }
+
+  &:focus {
+    background: $color-main-100 radial-gradient(
+                    36.59% 100.8% at 50% 50%,
+                    rgba(255, 255, 255, 0.3) 99.54%,
+                    rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  &:disabled {
+    background: $color-secondary-015;
+    color: $color-secondary-030;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
+.ExtraLarge {
+  padding: 14px 24px;
+}
+
+.Large {
+  padding: 12px 24px;
+}
+
+.Medium {
+  padding: 10px 20px;
+}
+
+.Small {
+  padding: 8px 16px;
+}
+
+.ExtraSmall {
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.Secondary {
+  background: $neutral-color;
+  color: $color-main-100;
+  outline: 1px solid $color-main-100;
+
+  svg {
+    path {
+      fill: $color-main-090;
+    }
+  }
+
+  &:hover {
+    background: $color-main-010;
+  }
+
+  &:focus {
+    color: $color-main-090;
+    background: radial-gradient(36.59% 100.8% at 50% 50%, $color-main-020 99.54%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:disabled {
+    background: $neutral-color;
+    color: $color-secondary-030;
+    outline: 1px solid $color-secondary-030;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
+.Tertiary {
+  background: $color-error-010;
+  color: $color-error-100;
+
+
+  &:hover {
+    outline: 1px solid $color-error-100;
+    background: $color-error-015;
+  }
+
+  &:focus {
+    outline: 1px solid $color-error-100;
+    background: radial-gradient(36.59% 100.8% at 50% 50%, $color-error-015 99.54%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:disabled {
+    background: $color-secondary-015;
+    color: $color-secondary-030;
+    outline: none;
+  }
 }

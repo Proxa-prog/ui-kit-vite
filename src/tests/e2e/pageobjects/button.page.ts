@@ -10,8 +10,8 @@ class ButtonPage extends Page {
         await this.toggleBtn.click();
     }
 
-    public open () {
-        return super.open();
+    public open (url?: string) {
+        return super.open(url);
     }
 }
 
