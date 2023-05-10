@@ -6,5 +6,6 @@ export { default as Button } from './components/Button/Button';
 export { default as ButtonIcon } from './components/ButtonIcon/ButtonIcon';
 export { default as ButtonLabel } from './components/ButtonLabel/ButtonLabel';
 export { default as ButtonFilter } from './components/ButtonFilter/ButtonFilter';
+export { default as ButtonForm } from './components/ButtonForm/ButtonForm';
 export { default as Counter } from './components/Counter/Counter';
 export { default as Accordion } from './components/Accordion/Accordion';

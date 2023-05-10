@@ -10,6 +10,7 @@ import {
     ButtonIcon,
     ButtonLabel,
     ButtonFilter,
+    ButtonForm,
 } from "./index";
 
 function App() {
@@ -60,6 +61,11 @@ function App() {
                     <ButtonFilter
                         id='buttonFilter'
                         value={1}
+                    />
+                }/>
+                <Route path='/buttonForm' element={
+                    <ButtonForm
+                        id='buttonForm'
                     />
                 }/>
             </Routes>

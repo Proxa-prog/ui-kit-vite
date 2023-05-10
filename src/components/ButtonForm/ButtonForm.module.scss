@@ -1,0 +1,42 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0 12px 0 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-main-090;
+  border: none;
+  background: $neutral-color;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-secondary-005;
+  }
+
+  &:active {
+    background-color: $color-main-090;
+    color: $neutral-color;
+
+    svg {
+      path {
+        fill: $neutral-color;
+      }
+    }
+  }
+}
+
+.imageWrapper {
+  @include buttonImageWrapper;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 7px;
+  }
+}
