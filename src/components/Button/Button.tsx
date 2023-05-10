@@ -2,8 +2,8 @@ import React, { FC } from "react";
 import classNames from "classnames";
 
 import {
-    LogoLeft,
-    LogoRight,
+    ArrowLeft,
+    ArrowRight,
 } from "/src/assets/index";
 
 import style from './Button.module.scss';
@@ -54,13 +54,13 @@ const Button: FC<IButton> = (props: IButton) => {
             {
                 startIcon
                 && type !== 'Tertiary'
-                && <LogoLeft />
+                && <ArrowLeft />
             }
             {children}
             {
                 endIcon
                 && type !== 'Tertiary'
-                && <LogoRight />
+                && <ArrowRight />
             }
         </button>
     );

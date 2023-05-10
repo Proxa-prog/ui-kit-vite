@@ -8,6 +8,7 @@ import {
 import {
     Button,
     ButtonIcon,
+    ButtonLabel,
 } from "./index";
 
 function App() {
@@ -44,9 +45,14 @@ function App() {
                 <Route path='/buttonIcon' element={
                     <ButtonIcon
                         size='Large'
-                        type='settings'
+                        type='tertiary'
                         id='buttonID'
-                        onClick={handleButtonCLick}
+                    />
+                }/>
+                <Route path='/buttonLabel' element={
+                    <ButtonLabel
+                        type='labelTrash'
+                        id='buttonID'
                     />
                 }/>
             </Routes>

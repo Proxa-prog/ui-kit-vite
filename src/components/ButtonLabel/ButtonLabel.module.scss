@@ -1,0 +1,107 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-secondary-050;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.labelPrevERZL {
+  svg {
+    path {
+      fill: $color-secondary-050;
+    }
+  }
+
+  &:hover {
+    color: $color-secondary-090;
+
+    svg {
+      path {
+        fill: $color-secondary-090;
+      }
+    }
+  }
+
+  &:disabled {
+    color: $color-secondary-030;
+
+    svg {
+      path {
+        fill: $color-secondary-015;
+      }
+    }
+  }
+}
+
+.labelAdd {
+  color: $color-main-090;
+
+  svg {
+    path {
+      fill: $color-main-090;
+    }
+  }
+
+  &:hover {
+    color: $color-main-090;
+
+    svg {
+      path {
+        fill: $color-main-090;
+      }
+    }
+  }
+
+  &:disabled {
+    color: $color-secondary-030;
+
+    svg {
+      path {
+        fill: $color-secondary-015;
+      }
+    }
+  }
+}
+
+.labelTrash {
+  color: $color-error-100;
+
+  svg {
+    path {
+      fill: $color-error-100;
+    }
+  }
+
+  &:hover {
+    color: $color-error-100;
+
+    svg {
+      path {
+        fill: $color-error-100;
+      }
+    }
+  }
+
+  &:disabled {
+    color: $color-secondary-030;
+
+    svg {
+      path {
+        fill: $color-secondary-015;
+      }
+    }
+  }
+}
+
+.imageWrapper {
+  @include buttonImageWrapper;
+}

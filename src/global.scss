@@ -6,8 +6,17 @@ $color-error-100:                    #ED0A34;
 $color-error-015:                    #F1BBC0;
 $color-error-010:                    #FDE6EB;
 $color-secondary-090:                #3B4256;
+$color-secondary-050:                #848E99;
 $color-secondary-030:                #C6CACF;
 $color-secondary-015:                #E1E3EA;
 $color-secondary-005:                #F3F7FB;
 $color-secondary-003:                #F9F9F9;
 $neutral-color:                      #FFFFFF;
+
+@mixin buttonImageWrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
