@@ -54,6 +54,8 @@ const ButtonIcon: FC<IButtonIcon> = (props: IButtonIcon) => {
                 {type === 'secondary' && <PlayButton />}
                 {type === 'tertiary' && <MoreHorizButton />}
                 {type === 'tertiaryERZL' && <MoreHorizButton />}
+                {type === 'MoreColorOff' && <MoreHorizButton />}
+                {type === 'MoreColorOn' && <MoreHorizButton />}
                 {type === 'error' && <TrashButton />}
                 {children}
             </div>

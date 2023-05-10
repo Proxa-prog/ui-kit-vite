@@ -87,6 +87,63 @@
   }
 }
 
+.MoreColorOff {
+  background-color: $neutral-color;
+  padding: 10px 8px;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: $color-secondary-015;
+  border-radius: 0;
+
+  &:hover {
+    svg {
+      path {
+        fill: $color-secondary-090;
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: inherit;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
+
+.MoreColorOn {
+  background-color: $color-secondary-003;
+  padding: 10px 8px;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: $color-secondary-015;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $color-main-020;
+
+    svg {
+      path {
+        fill: $color-secondary-090;
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: $color-secondary-015;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
 
 .Large {
   padding: 12px;
