@@ -9,6 +9,7 @@ import {
     Button,
     ButtonIcon,
     ButtonLabel,
+    ButtonFilter,
 } from "./index";
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
                     <Button
                         endIcon
                         startIcon
-                        id='buttonID'
+                        id='button'
                         onClick={handleButtonCLick}
                     >
                         {text}
@@ -36,7 +37,7 @@ function App() {
                         type='tertiary'
                         endIcon
                         startIcon
-                        id='buttonID'
+                        id='buttonRed'
                         onClick={handleButtonCLick}
                     >
                         {text}
@@ -46,13 +47,19 @@ function App() {
                     <ButtonIcon
                         size='Large'
                         type='tertiary'
-                        id='buttonID'
+                        id='buttonIcon'
                     />
                 }/>
                 <Route path='/buttonLabel' element={
                     <ButtonLabel
                         type='labelTrash'
-                        id='buttonID'
+                        id='buttonLabel'
+                    />
+                }/>
+                <Route path='/buttonFilter' element={
+                    <ButtonFilter
+                        id='buttonFilter'
+                        value={1}
                     />
                 }/>
             </Routes>

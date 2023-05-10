@@ -3,7 +3,7 @@ import Page from './page.ts';
 class ButtonPage extends Page {
 
     public get toggleBtn() {
-        return $('#buttonID')
+        return $('#button')
     }
 
     public async click () {

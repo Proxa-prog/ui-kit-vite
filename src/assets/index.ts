@@ -1,17 +1,19 @@
-import { ReactComponent as AddButton } from './images/add.svg'
-import { ReactComponent as PlayButton } from './images/play_arrow.svg'
-import { ReactComponent as MoreHorizButton } from './images/more_horiz.svg'
-import { ReactComponent as TrashButton } from './images/trash.svg'
-import { ReactComponent as SettingsButton } from './images/settings.svg'
-import { ReactComponent as ArrowRight } from '/src/assets/images/keyboard_arrow_right.svg'
-import { ReactComponent as ArrowLeft } from '/src/assets/images/keyboard_arrow_left.svg'
+import { ReactComponent as AddImage } from './images/add.svg'
+import { ReactComponent as PlayImage } from './images/play_arrow.svg'
+import { ReactComponent as MoreHorizImage } from './images/more_horiz.svg'
+import { ReactComponent as TrashImage } from './images/trash.svg'
+import { ReactComponent as SettingsImage } from './images/settings.svg'
+import { ReactComponent as FilterImage } from './images/filter.svg'
+import { ReactComponent as ArrowRightImage } from '/src/assets/images/keyboard_arrow_right.svg'
+import { ReactComponent as ArrowLeftImage } from '/src/assets/images/keyboard_arrow_left.svg'
 
 export {
-    AddButton,
-    PlayButton,
-    MoreHorizButton,
-    TrashButton,
-    SettingsButton,
-    ArrowRight,
-    ArrowLeft,
+    AddImage,
+    PlayImage,
+    MoreHorizImage,
+    TrashImage,
+    SettingsImage,
+    FilterImage,
+    ArrowRightImage,
+    ArrowLeftImage,
 }

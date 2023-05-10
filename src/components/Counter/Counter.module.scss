@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  background: $color-secondary-015;
+  color: $color-secondary-090;
+}
+
+.hasValue {
+  background: $color-main-090;
+  color: $neutral-color;
+}
+
+.isDisabled {
+  background: $color-secondary-015;
+  color: $color-secondary-030;
+}
+
+.red {
+  background-color: $color-error-100;
+}

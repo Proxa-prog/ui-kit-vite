@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import classNames from "classnames";
 
 import {
-    AddButton,
-    ArrowLeft,
-    TrashButton,
+    AddImage,
+    ArrowLeftImage,
+    TrashImage,
 } from "/src/assets/index";
 
 import style from './ButtonLabel.module.scss';
@@ -45,9 +45,9 @@ const ButtonLabel: FC<IButtonLabel> = (props: IButtonLabel) => {
             onClick={handleButtonClick}
         >
             <div className={style.imageWrapper}>
-                {type === 'labelPrevERZL' && <ArrowLeft />}
-                {type === 'labelAdd' && <AddButton />}
-                {type === 'labelTrash' && <TrashButton />}
+                {type === 'labelPrevERZL' && <ArrowLeftImage />}
+                {type === 'labelAdd' && <AddImage />}
+                {type === 'labelTrash' && <TrashImage />}
             </div>
             {label}
         </button>

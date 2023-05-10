@@ -2,11 +2,11 @@ import React, { FC } from "react";
 import classNames from "classnames";
 
 import {
-    AddButton,
-    PlayButton,
-    MoreHorizButton,
-    TrashButton,
-    SettingsButton,
+    AddImage,
+    PlayImage,
+    MoreHorizImage,
+    TrashImage,
+    SettingsImage,
 } from "/src/assets/index";
 
 import style from './ButtonIcon.module.scss';
@@ -51,14 +51,14 @@ const ButtonIcon: FC<IButtonIcon> = (props: IButtonIcon) => {
             onClick={handleButtonClick}
         >
             <div className={style.imageWrapper}>
-                {type === 'primary' && <AddButton />}
-                {type === 'secondary' && <PlayButton />}
-                {type === 'tertiary' && <MoreHorizButton />}
-                {type === 'tertiaryERZL' && <MoreHorizButton />}
-                {type === 'MoreColorOff' && <MoreHorizButton />}
-                {type === 'MoreColorOn' && <MoreHorizButton />}
-                {type === 'error' && <TrashButton />}
-                {type === 'settings' && <SettingsButton />}
+                {type === 'primary' && <AddImage />}
+                {type === 'secondary' && <PlayImage />}
+                {type === 'tertiary' && <MoreHorizImage />}
+                {type === 'tertiaryERZL' && <MoreHorizImage />}
+                {type === 'MoreColorOff' && <MoreHorizImage />}
+                {type === 'MoreColorOn' && <MoreHorizImage />}
+                {type === 'error' && <TrashImage />}
+                {type === 'settings' && <SettingsImage />}
                 {children}
             </div>
         </button>
