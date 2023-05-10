@@ -6,6 +6,7 @@ import {
     PlayButton,
     MoreHorizButton,
     TrashButton,
+    SettingsButton,
 } from "/src/assets/index";
 
 import style from './ButtonIcon.module.scss';
@@ -57,6 +58,7 @@ const ButtonIcon: FC<IButtonIcon> = (props: IButtonIcon) => {
                 {type === 'MoreColorOff' && <MoreHorizButton />}
                 {type === 'MoreColorOn' && <MoreHorizButton />}
                 {type === 'error' && <TrashButton />}
+                {type === 'settings' && <SettingsButton />}
                 {children}
             </div>
         </button>

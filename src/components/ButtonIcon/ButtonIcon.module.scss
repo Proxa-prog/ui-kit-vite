@@ -37,6 +37,21 @@
   }
 }
 
+.settings {
+  background-color: $color-secondary-005;
+
+  &:hover,
+  &:active {
+    background-color: $color-main-020;
+
+    svg {
+      path {
+        fill: $color-main-090;
+      }
+    }
+  }
+}
+
 .button {
   display: flex;
   flex-direction: row;
