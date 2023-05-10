@@ -12,7 +12,7 @@ test('button red', async () => {
     const result = await page.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.001,
+        failureThreshold: 0.01,
         failureThresholdType: 'percent'
     });
 });

@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { Button } from "./index";
 import {
     BrowserRouter,
     Route,
-    Routes
+    Routes,
 } from 'react-router-dom';
+
+import {
+    Button,
+    ButtonIcon,
+} from "./index";
 
 function App() {
     const [text, setText] = useState('BUTTON');
@@ -28,7 +32,7 @@ function App() {
                 />
                 <Route path='/buttonRed' element={
                     <Button
-                        type='Tertiary'
+                        type='tertiary'
                         endIcon
                         startIcon
                         id='buttonID'
@@ -37,6 +41,15 @@ function App() {
                         {text}
                     </Button>}
                 />
+                <Route path='/buttonIcon' element={
+                    <ButtonIcon
+                        size='Large'
+                        disabled
+                        type='secondary'
+                        id='buttonID'
+                        onClick={handleButtonCLick}
+                    />
+                }/>
             </Routes>
         </BrowserRouter>
     )

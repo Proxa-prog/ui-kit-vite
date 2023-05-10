@@ -1,0 +1,65 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: $color-main-090;
+
+  &:hover {
+    background-color: $color-main-100;
+  }
+
+  &:disabled {
+    background-color: $color-secondary-015;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
+.secondary {
+  background-color: $color-main-010;
+
+  &:hover {
+    background-color: $color-main-020;
+  }
+
+  &:disabled {
+    background-color: $color-secondary-015;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
+.Large {
+  padding: 12px;
+}
+
+.Medium {
+  padding: 10px;
+}
+
+.Small {
+  padding: 4px;
+}
+
+.imageWrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,4 +1,4 @@
-.primary {
+.Primary {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -63,7 +63,7 @@
   line-height: 12px;
 }
 
-.Secondary {
+.secondary {
   background: $neutral-color;
   color: $color-main-100;
   outline: 1px solid $color-main-100;
@@ -96,7 +96,7 @@
   }
 }
 
-.Tertiary {
+.tertiary {
   background: $color-error-010;
   color: $color-error-100;
 

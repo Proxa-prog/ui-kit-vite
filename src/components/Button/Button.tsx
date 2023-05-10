@@ -7,7 +7,7 @@ import { ReactComponent as LogoLeft } from '/src/assets/images/keyboard_arrow_le
 import style from './Button.module.scss';
 
 type ButtonSize = 'ExtraLarge' | 'Large' | 'Medium' | 'Small' | 'ExtraSmall';
-type ButtonType = 'Primary' | 'Secondary' | 'Tertiary';
+type ButtonType = 'primary' | 'secondary' | 'tertiary';
 
 interface IButton {
     children: React.ReactNode;
@@ -23,19 +23,23 @@ interface IButton {
 const Button: FC<IButton> = (props: IButton) => {
     const {
         children,
-        disabled,
+        disabled = false,
         startIcon,
         endIcon,
         size = 'Medium',
         type = 'Primary',
-        id,
+        id = '',
         onClick,
     } = props;
+
+    const handleButtonClick = () => {
+        onClick && onClick();
+    };
 
     return (
         <button
             className={classNames(
-                style.primary,
+                style.Primary,
                 {
                     [ style[size] ]: size,
                     [ style[type] ]: type,
@@ -43,7 +47,7 @@ const Button: FC<IButton> = (props: IButton) => {
             )}
             disabled={disabled}
             id={id}
-            onClick={onClick}
+            onClick={handleButtonClick}
         >
             {
                 startIcon
