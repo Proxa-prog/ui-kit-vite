@@ -44,8 +44,7 @@ function App() {
                 <Route path='/buttonIcon' element={
                     <ButtonIcon
                         size='Large'
-                        disabled
-                        type='secondary'
+                        type='tertiaryERZL'
                         id='buttonID'
                         onClick={handleButtonCLick}
                     />

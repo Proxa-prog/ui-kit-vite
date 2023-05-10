@@ -1,8 +1,10 @@
 import React, { FC } from "react";
 import classNames from "classnames";
 
-import { ReactComponent as LogoRight } from '/src/assets/images/keyboard_arrow_right.svg'
-import { ReactComponent as LogoLeft } from '/src/assets/images/keyboard_arrow_left.svg'
+import {
+    LogoLeft,
+    LogoRight,
+} from "/src/assets/index";
 
 import style from './Button.module.scss';
 

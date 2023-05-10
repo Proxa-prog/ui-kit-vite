@@ -1,28 +1,8 @@
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .primary {
   background-color: $color-main-090;
 
   &:hover {
     background-color: $color-main-100;
-  }
-
-  &:disabled {
-    background-color: $color-secondary-015;
-
-    svg {
-      path {
-        fill: $color-secondary-030;
-      }
-    }
   }
 }
 
@@ -32,6 +12,39 @@
   &:hover {
     background-color: $color-main-020;
   }
+}
+
+.tertiary {
+  background-color: $color-secondary-005;
+
+  &:hover,
+  &:active {
+    background-color: $color-main-020;
+
+    svg {
+      path {
+        fill: $color-secondary-090;
+      }
+    }
+  }
+}
+
+.error {
+  background-color: $color-error-010;
+
+  &:hover {
+    background-color: $color-error-015;
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 
   &:disabled {
     background-color: $color-secondary-015;
@@ -43,6 +56,37 @@
     }
   }
 }
+
+.tertiaryERZL {
+  background-color: inherit;
+
+  &:hover {
+    svg {
+      path {
+        fill: $color-secondary-090;
+      }
+    }
+  }
+
+  &:active {
+    svg {
+      path {
+        fill: $color-main-090;
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: inherit;
+
+    svg {
+      path {
+        fill: $color-secondary-030;
+      }
+    }
+  }
+}
+
 
 .Large {
   padding: 12px;

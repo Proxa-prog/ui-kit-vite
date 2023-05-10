@@ -4,12 +4,14 @@ import classNames from "classnames";
 import {
     AddButton,
     PlayButton,
+    MoreHorizButton,
+    TrashButton,
 } from "/src/assets/index";
 
 import style from './ButtonIcon.module.scss';
 
 type ButtonIconSize = 'Large' | 'Medium' | 'Small';
-type ButtonIconType = 'primary' | 'secondary' | 'tertiary' | 'error' | 'MoreColorOff' | 'MoreColorOn' | 'settings';
+type ButtonIconType = 'primary' | 'secondary' | 'tertiary' | 'tertiaryERZL' | 'error' | 'MoreColorOff' | 'MoreColorOn' | 'settings';
 
 interface IButtonIcon {
     children?: React.ReactNode;
@@ -25,7 +27,7 @@ const ButtonIcon: FC<IButtonIcon> = (props: IButtonIcon) => {
         children,
         disabled = false,
         size = 'Large',
-        type = 'secondary',
+        type = 'primary',
         id = '',
         onClick,
     } = props;
@@ -50,6 +52,9 @@ const ButtonIcon: FC<IButtonIcon> = (props: IButtonIcon) => {
             <div className={style.imageWrapper}>
                 {type === 'primary' && <AddButton />}
                 {type === 'secondary' && <PlayButton />}
+                {type === 'tertiary' && <MoreHorizButton />}
+                {type === 'tertiaryERZL' && <MoreHorizButton />}
+                {type === 'error' && <TrashButton />}
                 {children}
             </div>
         </button>
