@@ -15,7 +15,7 @@ test('ButtonLabel', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.033,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',

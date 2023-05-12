@@ -15,7 +15,7 @@ test('ButtonIcon primary screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -33,7 +33,7 @@ test('ButtonIcon secondary screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -51,7 +51,7 @@ test('ButtonIcon tertiary screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -69,7 +69,7 @@ test('ButtonIcon error screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -87,7 +87,7 @@ test('ButtonIcon moreColorOn screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -105,7 +105,7 @@ test('ButtonIcon moreColorOff screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -123,7 +123,7 @@ test('ButtonIcon settings screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -141,7 +141,7 @@ test('ButtonIcon tertiaryERZL screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.033,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
