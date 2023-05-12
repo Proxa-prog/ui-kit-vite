@@ -14,11 +14,10 @@ test('ButtonLabel', async () => {
     const element = await page.$('#buttonLabel');
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
-        comparisonMethod: 'pixelmatch',
+        comparisonMethod: 'ssim',
         failureThreshold: 0.02,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
-        onlyDiff: true,
     });
 });

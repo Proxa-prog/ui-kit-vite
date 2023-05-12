@@ -14,12 +14,11 @@ test('buttonPrimary', async () => {
     const elementPrimary = await page.$('#primary');
     const result = await elementPrimary?.screenshot();
     expect(result).toMatchImageSnapshot({
-        comparisonMethod: 'pixelmatch',
+        comparisonMethod: 'ssim',
         failureThreshold: 0.02,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
-        onlyDiff: true,
     });
 });
 
@@ -33,12 +32,11 @@ test('buttonSecondary', async () => {
     const elementSecondary = await page.$('#secondary');
     const result = await elementSecondary?.screenshot();
     expect(result).toMatchImageSnapshot({
-        comparisonMethod: 'pixelmatch',
+        comparisonMethod: 'ssim',
         failureThreshold: 0.02,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
-        onlyDiff: true,
     });
 });
 
@@ -52,11 +50,10 @@ test('buttonTertiary', async () => {
     const elementTertiary = await page.$('#tertiary');
     const result = await elementTertiary?.screenshot();
     expect(result).toMatchImageSnapshot({
-        comparisonMethod: 'pixelmatch',
+        comparisonMethod: 'ssim',
         failureThreshold: 0.02,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
-        onlyDiff: true,
     });
 });
