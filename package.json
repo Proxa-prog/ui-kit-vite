@@ -1,6 +1,6 @@
 {
   "name": "ui-kit-vite",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "main": "./dist/ui-kit-vite.umd.cjs",
   "module": "./dist/ui-kit-vite.js",

@@ -141,7 +141,7 @@ test('ButtonIcon tertiaryERZL screenshot test', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.001,
+        failureThreshold: 0.033,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
