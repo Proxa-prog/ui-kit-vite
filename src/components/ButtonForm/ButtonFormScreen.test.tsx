@@ -15,7 +15,7 @@ test('ButtonForm', async () => {
     const result = await element?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',

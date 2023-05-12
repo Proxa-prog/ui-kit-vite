@@ -15,7 +15,7 @@ test('buttonPrimary', async () => {
     const result = await elementPrimary?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -33,7 +33,7 @@ test('buttonSecondary', async () => {
     const result = await elementSecondary?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
@@ -51,7 +51,7 @@ test('buttonTertiary', async () => {
     const result = await elementTertiary?.screenshot();
     expect(result).toMatchImageSnapshot({
         comparisonMethod: 'ssim',
-        failureThreshold: 0.02,
+        failureThreshold: 0.001,
         failureThresholdType: 'percent',
         allowSizeMismatch: true,
         diffDirection: 'vertical',
