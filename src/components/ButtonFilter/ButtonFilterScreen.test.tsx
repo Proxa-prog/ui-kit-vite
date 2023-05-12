@@ -17,7 +17,6 @@ test('ButtonFilter', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });

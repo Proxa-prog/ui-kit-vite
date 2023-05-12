@@ -17,7 +17,6 @@ test('ButtonIcon primary screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -35,7 +34,6 @@ test('ButtonIcon secondary screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -53,7 +51,6 @@ test('ButtonIcon tertiary screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -71,7 +68,6 @@ test('ButtonIcon error screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -89,7 +85,6 @@ test('ButtonIcon moreColorOn screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -107,7 +102,6 @@ test('ButtonIcon moreColorOff screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -125,7 +119,6 @@ test('ButtonIcon settings screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
@@ -143,7 +136,6 @@ test('ButtonIcon tertiaryERZL screenshot test', async () => {
         comparisonMethod: 'ssim',
         failureThreshold: 0.001,
         failureThresholdType: 'percent',
-        allowSizeMismatch: true,
         diffDirection: 'vertical',
     });
 });
