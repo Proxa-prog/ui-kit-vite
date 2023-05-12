@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 
-import { FilterImage } from "/src/assets/index";
-import { Counter } from "/src/index";
+import { FilterImage } from "/src/assets/index.ts";
+import { Counter } from "/src/index.ts";
 
 import style from './ButtonFilter.module.scss';
 
@@ -11,6 +11,7 @@ interface IButtonFilter {
     disabled?: boolean;
     value?: number;
     id?: string;
+    counterId?: string;
     onClick?: () => void;
 }
 
@@ -19,6 +20,7 @@ const ButtonFilter: FC<IButtonFilter> = (props: IButtonFilter) => {
         disabled = false,
         value = 0,
         id = '',
+        counterId = '',
         onClick,
     } = props;
 
@@ -40,6 +42,7 @@ const ButtonFilter: FC<IButtonFilter> = (props: IButtonFilter) => {
                 className={style.counter}
                 value={value}
                 disabled={disabled}
+                id={counterId}
             />
         </button>
     );

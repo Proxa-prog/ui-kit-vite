@@ -4,7 +4,7 @@ import classNames from "classnames";
 import {
     ArrowRightImage,
     ArrowLeftImage,
-} from "/src/assets/index";
+} from "/src/assets/index.ts";
 
 import style from './Button.module.scss';
 
@@ -16,8 +16,8 @@ interface IButton {
     disabled?: boolean;
     size?: ButtonSize;
     type?: ButtonType;
-    startIcon?: string;
-    endIcon?: string;
+    startIcon?: boolean;
+    endIcon?: boolean;
     id?: string;
     onClick?: () => void;
 }
@@ -53,13 +53,13 @@ const Button: FC<IButton> = (props: IButton) => {
         >
             {
                 startIcon
-                && type !== 'Tertiary'
+                && type === 'primary' || 'secondary'
                 && <ArrowLeftImage />
             }
             {children}
             {
                 endIcon
-                && type !== 'Tertiary'
+                && type === 'primary' || 'secondary'
                 && <ArrowRightImage />
             }
         </button>

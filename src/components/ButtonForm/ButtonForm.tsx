@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 
-import { AddLinkImage } from "/src/assets/index";
+import { AddLinkImage } from "/src/assets/index.ts";
 
 import style from './ButtonForm.module.scss';
 

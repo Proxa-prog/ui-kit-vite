@@ -11,6 +11,7 @@ import {
     ButtonLabel,
     ButtonFilter,
     ButtonForm,
+    Counter,
 } from "./index";
 
 function App() {
@@ -24,32 +25,82 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path='/button' element={
-                    <Button
-                        endIcon
-                        startIcon
-                        id='button'
-                        onClick={handleButtonCLick}
-                    >
-                        {text}
-                    </Button>}
-                />
-                <Route path='/buttonRed' element={
-                    <Button
-                        type='tertiary'
-                        endIcon
-                        startIcon
-                        id='buttonRed'
-                        onClick={handleButtonCLick}
-                    >
-                        {text}
-                    </Button>}
+                    <div style={{
+                        display: 'flex',
+                        gap: '5px',
+                        flexDirection: 'row',
+                    }}>
+                        <Button
+                            type='primary'
+                            id='primary'
+                            onClick={handleButtonCLick}
+                        >
+                            {text}
+                        </Button>
+                        <Button
+                            type='secondary'
+                            id='secondary'
+                            onClick={handleButtonCLick}
+                        >
+                            {text}
+                        </Button>
+                        <Button
+                            type='tertiary'
+                            id='tertiary'
+                            onClick={handleButtonCLick}
+                        >
+                            {text}
+                        </Button>
+                    </div>
+                }
                 />
                 <Route path='/buttonIcon' element={
-                    <ButtonIcon
-                        size='Large'
-                        type='tertiary'
-                        id='buttonIcon'
-                    />
+                    <div style={{
+                        display: 'flex',
+                        gap: '5px',
+                        flexDirection: 'row',
+                    }}>
+                        <ButtonIcon
+                            type='primary'
+                            size='Large'
+                            id='primary'
+                        />
+                        <ButtonIcon
+                            type='secondary'
+                            size='Large'
+                            id='secondary'
+                        />
+                        <ButtonIcon
+                            type='tertiary'
+                            size='Large'
+                            id='tertiary'
+                        />
+                        <ButtonIcon
+                            type='error'
+                            size='Large'
+                            id='error'
+                        />
+                        <ButtonIcon
+                            type='moreColorOn'
+                            size='Large'
+                            id='moreColorOn'
+                        />
+                        <ButtonIcon
+                            type='moreColorOff'
+                            size='Large'
+                            id='moreColorOff'
+                        />
+                        <ButtonIcon
+                            type='settings'
+                            size='Large'
+                            id='settings'
+                        />
+                        <ButtonIcon
+                            type='tertiaryERZL'
+                            size='Large'
+                            id='tertiaryERZL'
+                        />
+                    </div>
                 }/>
                 <Route path='/buttonLabel' element={
                     <ButtonLabel
@@ -60,13 +111,25 @@ function App() {
                 <Route path='/buttonFilter' element={
                     <ButtonFilter
                         id='buttonFilter'
-                        value={1}
+                        value={0}
+                        counterId='counterId'
                     />
                 }/>
                 <Route path='/buttonForm' element={
                     <ButtonForm
                         id='buttonForm'
                     />
+                }/>
+                <Route path='/counter' element={
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}>
+                        <Counter
+                            id='counter'
+                            value={435}
+                        />
+                    </div>
                 }/>
             </Routes>
         </BrowserRouter>

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  background: $color-main-090;
+  background-color: $color-main-090;
   border: none;
   border-radius: 4px;
   font-family: 'Inter', sans-serif;
@@ -18,11 +18,12 @@
   color: $neutral-color;
 
   &:hover {
-    background: $color-main-100;
+    background-color: $color-main-100;
   }
 
   &:focus {
-    background: $color-main-100 radial-gradient(
+    background-color: $color-main-100;
+    background-image: radial-gradient(
                     36.59% 100.8% at 50% 50%,
                     rgba(255, 255, 255, 0.3) 99.54%,
                     rgba(255, 255, 255, 0) 100%
@@ -30,7 +31,7 @@
   }
 
   &:disabled {
-    background: $color-secondary-015;
+    background-color: $color-secondary-015;
     color: $color-secondary-030;
 
     svg {
@@ -64,7 +65,7 @@
 }
 
 .secondary {
-  background: $neutral-color;
+  background-color: $neutral-color;
   color: $color-main-100;
   outline: 1px solid $color-main-100;
 
@@ -75,16 +76,16 @@
   }
 
   &:hover {
-    background: $color-main-010;
+    background-color: $color-main-010;
   }
 
   &:focus {
     color: $color-main-090;
-    background: radial-gradient(36.59% 100.8% at 50% 50%, $color-main-020 99.54%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(36.59% 100.8% at 50% 50%, $color-main-020 99.54%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:disabled {
-    background: $neutral-color;
+    background-color: $neutral-color;
     color: $color-secondary-030;
     outline: 1px solid $color-secondary-030;
 
@@ -97,22 +98,22 @@
 }
 
 .tertiary {
-  background: $color-error-010;
+  background-color: $color-error-010;
   color: $color-error-100;
 
 
   &:hover {
     outline: 1px solid $color-error-100;
-    background: $color-error-015;
+    background-color: $color-error-015;
   }
 
   &:focus {
     outline: 1px solid $color-error-100;
-    background: radial-gradient(36.59% 100.8% at 50% 50%, $color-error-015 99.54%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(36.59% 100.8% at 50% 50%, $color-error-015 99.54%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:disabled {
-    background: $color-secondary-015;
+    background-color: $color-secondary-015;
     color: $color-secondary-030;
     outline: none;
   }

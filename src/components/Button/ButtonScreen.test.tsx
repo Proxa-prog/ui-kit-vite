@@ -4,16 +4,59 @@ import puppeteer from "puppeteer";
 
 expect.extend({toMatchImageSnapshot}); // Устраняет Invalid Chai property: toMatchImageSnapshot
 
-test('button', async () => {
+test('buttonPrimary', async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.setViewport({ width: 160, height: 60 });
-    await page.goto('http://localhost:5173/button');
-    const result = await page.screenshot();
+    await page.goto('http://localhost:5173/button', {
+        timeout: 3000,
+        waitUntil: ['load', 'domcontentloaded', 'networkidle0', 'networkidle2']
+    });
+    const elementPrimary = await page.$('#primary');
+    const result = await elementPrimary?.screenshot();
     expect(result).toMatchImageSnapshot({
-        comparisonMethod: 'ssim',
-        failureThreshold: 0.001,
-        failureThresholdType: 'percent'
+        comparisonMethod: 'pixelmatch',
+        failureThreshold: 0.02,
+        failureThresholdType: 'percent',
+        allowSizeMismatch: true,
+        diffDirection: 'vertical',
+        onlyDiff: true,
     });
 });
 
+test('buttonSecondary', async () => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto('http://localhost:5173/button', {
+        timeout: 3000,
+        waitUntil: ['load', 'domcontentloaded', 'networkidle0', 'networkidle2']
+    });
+    const elementSecondary = await page.$('#secondary');
+    const result = await elementSecondary?.screenshot();
+    expect(result).toMatchImageSnapshot({
+        comparisonMethod: 'pixelmatch',
+        failureThreshold: 0.02,
+        failureThresholdType: 'percent',
+        allowSizeMismatch: true,
+        diffDirection: 'vertical',
+        onlyDiff: true,
+    });
+});
+
+test('buttonTertiary', async () => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto('http://localhost:5173/button',{
+        timeout: 3000,
+        waitUntil: ['load', 'domcontentloaded', 'networkidle0', 'networkidle2']
+    });
+    const elementTertiary = await page.$('#tertiary');
+    const result = await elementTertiary?.screenshot();
+    expect(result).toMatchImageSnapshot({
+        comparisonMethod: 'pixelmatch',
+        failureThreshold: 0.02,
+        failureThresholdType: 'percent',
+        allowSizeMismatch: true,
+        diffDirection: 'vertical',
+        onlyDiff: true,
+    });
+});

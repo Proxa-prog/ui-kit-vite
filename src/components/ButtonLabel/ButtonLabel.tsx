@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 
 import {
     AddImage,
     ArrowLeftImage,
     TrashImage,
-} from "/src/assets/index";
+} from "/src/assets/index.ts";
 
 import style from './ButtonLabel.module.scss';
 

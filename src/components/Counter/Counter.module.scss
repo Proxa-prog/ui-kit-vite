@@ -10,20 +10,24 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  background: $color-secondary-015;
   color: $color-secondary-090;
 }
 
 .hasValue {
-  background: $color-main-090;
   color: $neutral-color;
 }
 
-.isDisabled {
-  background: $color-secondary-015;
-  color: $color-secondary-030;
+
+.blue {
+  background-color: $color-main-090;
 }
 
 .red {
   background-color: $color-error-100;
 }
+
+.isDisabled {
+  background-color: $color-secondary-015;
+  color: $color-secondary-030;
+}
+

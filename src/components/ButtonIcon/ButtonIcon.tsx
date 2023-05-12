@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 
 import {
@@ -7,12 +7,12 @@ import {
     MoreHorizImage,
     TrashImage,
     SettingsImage,
-} from "/src/assets/index";
+} from "/src/assets/index.ts";
 
 import style from './ButtonIcon.module.scss';
 
 type ButtonIconSize = 'Large' | 'Medium' | 'Small';
-type ButtonIconType = 'primary' | 'secondary' | 'tertiary' | 'tertiaryERZL' | 'error' | 'MoreColorOff' | 'MoreColorOn' | 'settings';
+type ButtonIconType = 'primary' | 'secondary' | 'tertiary' | 'tertiaryERZL' | 'error' | 'moreColorOff' | 'moreColorOn' | 'settings';
 
 interface IButtonIcon {
     children?: React.ReactNode;
@@ -55,8 +55,8 @@ const ButtonIcon: FC<IButtonIcon> = (props: IButtonIcon) => {
                 {type === 'secondary' && <PlayImage />}
                 {type === 'tertiary' && <MoreHorizImage />}
                 {type === 'tertiaryERZL' && <MoreHorizImage />}
-                {type === 'MoreColorOff' && <MoreHorizImage />}
-                {type === 'MoreColorOn' && <MoreHorizImage />}
+                {type === 'moreColorOff' && <MoreHorizImage />}
+                {type === 'moreColorOn' && <MoreHorizImage />}
                 {type === 'error' && <TrashImage />}
                 {type === 'settings' && <SettingsImage />}
                 {children}
